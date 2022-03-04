@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- link to font awesome -->
+    <script src="https://kit.fontawesome.com/0339426148.js" crossorigin="anonymous"></script>
+    <!-- link to bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- link to style.css -->
+    <link rel="stylesheet" href="style.css">
+    <title>Erin go Bragh</title>
+</head>
+<body>
+ <!-- Navbar Component -->
+ <!-- navbar-dark class is used on Navbars with dark background so the text can bee seen -->
+ <!-- The sticky-top class is used to set the stickuy position to an element (the nav element in this case) -->
+<nav class="navbar bg-warning navbar-dark sticky-top">
+    <div class="container"> 
+        <!-- the navbar-brand class is used to make a logo or text larger to help it stand out -->
+        <!-- if you want your text to come before the font awesome icon, put it before the i class link; if you want it to come after, put it after the i class link to font awesome -->
+        <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-clover"></i>
+            Erin go Bragh
+        </a>
+    </div>
+</nav>
+
+<!-- Shoase -->
+<!-- section#showcase>h1 -->
+<section id="showcase" class="d-flex flex-column justify-content-center align-items-center text-light m-0 p-5">
+    <!-- if you want larger text, use display-  -->
+<h1 class="display-4">Erin go Bragh</h1>
+<p class="lead text-center">Welcome to the Emerald Isle</p>
+<a href="#gallery" class="btn btn-secondary btn-success">Sláinte</a>
+</section>
+
+<!-- Gallery -->
+<!-- section#gallery>.container -->
+<section id="gallery" class="bg-success p-5">
+<div class="container"></div>
+<!-- Bootstrap Grid -->
+<div class="row">
+    <!-- Dolmen -->
+    <!-- section.mb-4 -->
+    <!-- section.mb-4 col-lg-4 -->
+    <section class="mb-4 col-lg-4">
+        <!-- card 1 -->
+        <div class="card">
+            <img src="images/Poulnabrone Dolmen.png" alt="Dolmen" class="card-img-top">
+            <div class="card-body">
+                <h5 class="card-title">Poulnabrone Dolmen</h5>
+                <p class="card-text">Located in the Burren, the iconic megalithic tomb at Poulnabrone dates back to the Neolithic period. There are approximately 174 of these monuments of various sizes across Ireland. However, Puolnabrone is the most widely recognized.
+                </p>
+                <a href="https://en.wikipedia.org/wiki/Poulnabrone_dolmen" target="blank" class="btn btn-outline-info btn-sm">Learn More</a>
+                <a href="" class="btn btn-sm btn-outline-danger">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- section.mb-4.col-lg-4>.card>img^.card-body>h5.card-title^p.card-text -->
+    <section class="mb-4 col-lg-4">
+        <!-- card 2 -->
+        <div class="card"><img src="images/Blarney Castle.png" alt="Blarney Castle" class="card-img-top">       
+        <div class="card-body">
+            <h5 class="card-title">Blarney Castle</h5>
+            <p class="card-text"> Blarney Castle is a medieval stronghold in Blarney, near Cork. The current keep was built in 1446 by one of Ireland's greatest chieftans - Cormac MacCarthy. The world-famous Blarney Stone is among the machicolations of the castle.
+                </p>
+            <a href="https://en.wikipedia.org/wiki/Blarney_Castle" target="blank" class="btn btn-outline-info btn-sm">Learn More</a>
+                <a href="" class="btn btn-sm btn-outline-danger">
+                <i class="fa-regular fa-heart"></i>
+            </a>
+        </div>
+    </div>
+    </section>
+<!-- Bread 3 -->
+<!-- shorthand #1:   
+    section.mb-4.col-lg-4>.card>img.card-img-top+.card-body>h5.card-title+p.card-text+a.btn.btn-outline-info.btn-sm+a.btn-sm.butn-outline-danger>i.fa-regular.fa-heart -->
+<!-- shorthand #2:
+    copying and pasting, duh -->
+<section class="mb-4 col-lg-4">
+    <!-- Card 3 -->
+    <div class="card">
+        <img src="images/Gougane Barra.png" alt="Gougane Barra" class="card-img-top">
+        <div class="card-body">
+            <h5 class="card-title">Gougane Barra</h5>
+            <p class="card-text">Gougane Barra (meaning 'the rock of Barra) is west of Macroom in County Cork. The name comes from Saint Finbarr. St Finbar's Oratory is the final destination for one of the five Pilgrim Paths of Ireland, as well as a popular place for weddings.</p>
+            <a href="https://en.wikipedia.org/wiki/Gougane_Barra" target="blank" class="btn btn-outline-info btn-sm">Learn More</a>
+                <a href="" class="btn btn-sm btn-outline-danger">
+                <i class="fa-regular fa-heart"></i></a>
+            </div>
+    </div>
+</section>
+
+</div>
+</section>
+<footer class="bg-warning">
+    <div class="container">
+        <p class="lead m-0 p-4 text-center text-light">
+            Built using 
+            <a href="https://getbootstrap.com/" 
+            target="blank" class= "text-decoration-none">
+            <i class="fa-brands fa-bootstrap">
+            </i>
+            </a>
+          
+            <!-- <a href="https://getbootstrap.com/" class="btn-outline-info"></a>
+            <i class="bi bi-bootstrap"></i> -->
+        </p>
+        <p class="text-center text-light "><em> Cover and photos by LB Kistler Design</em></p>
+
+    </div>
+</footer>
+
+
+
+
+    <!-- link to bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
